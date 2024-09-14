@@ -1,5 +1,5 @@
 import { useMediaQuery } from "@uidotdev/usehooks";
-
+import about from "../../../assets/about.png";
 const AboutUs=()=>{
     const isSmallDevice = useMediaQuery("only screen and (max-width : 811px)");
     return(
@@ -8,8 +8,8 @@ const AboutUs=()=>{
                 isSmallDevice &&
                 <div className={`w-[100vw] h-[80vh]  flex flex-col p-[5%] py-[10%]  `}  >
                     <div className='w-[100%]  h-[80%]  flex justify-center items-center'>
-                        <div className='bg-white h-[70%] w-[70%] rounded-xl shadow-md' data-aos="fade-down">
-
+                        <div className=' h-[70%] w-[70%] rounded-xl ' data-aos="flip-right">
+                        <img src={about} className="'h-[100%] w-[100%]"/>
                         </div>
                     </div>
                     <div className={`w-[95%] h-100 flex  text-white justify-center items-center flex-col  `} data-aos="fade-up">
@@ -48,8 +48,8 @@ const AboutUs=()=>{
 
                     </div>
                     <div className='w-[50vw]   flex justify-center items-center' data-aos="flip-right">
-                        <div className='bg-white h-[50%] w-[50%] rounded-xl shadow-md'>
-
+                        <div className=' h-[70%] w-[70%] rounded-xl '>
+                            <img src={about} className="h-[100%]"/>
                         </div>
                     </div>
 

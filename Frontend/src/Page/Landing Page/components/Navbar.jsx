@@ -15,7 +15,7 @@ const Navbar=()=>{
         AOS.init()
     },[])
     return(
-        <div className="w-[100vw] h-[10vh] shadow-md bg-[#0f2770] p-5 flex items-center fixed top-0">
+        <div className="w-[100vw] h-[10vh] shadow-md bg-[#4069e5] p-5 flex items-center fixed top-0">
             <div className="flex">
                 <img src={Icon} className={`${isSmallDevice ? "h-[100%] w-[20%]" : "h-[100%] w-[10%]" } `}/>
             </div>

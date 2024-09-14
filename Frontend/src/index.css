@@ -13,3 +13,15 @@
 .custom-rating .p-rating-icon.p-rating-icon-star.p-highlight {
     color: #FF6347; /* Change to your desired highlight color */
 }
+.p-toast-message-icon {
+    margin-right: 0.5rem; /* Adjust the gap as needed */
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.p-card-content{
+    padding:0 !important;
+}
+.p-icon-field > .p-input-icon{
+    position: absolute;
+    top: 30%;
+}
