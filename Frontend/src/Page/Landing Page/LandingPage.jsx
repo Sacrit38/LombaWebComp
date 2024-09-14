@@ -1,6 +1,9 @@
 import { useMediaQuery } from '@uidotdev/usehooks';
 import 'aos/dist/aos.css';
 import bg from "../../assets/background.png";
+import local from "../../assets/local.png";
+import marketing from "../../assets/marketing.png";
+import tenant from "../../assets/tenant.png";
 import AboutUs from './components/AboutUs';
 import Feature from './components/Feature';
 import Footer from './components/Footer';
@@ -16,8 +19,8 @@ const LandingPage=()=>{
                 isSmallDevice &&
                 <div className={`w-[100vw] h-[60vh]  flex flex-col p-[5%] py-[15%]  bg-cover bg-center bg-no-repeat`}  style={{ backgroundImage: `url(${bg})`}}>
                     <div className='w-[100%]  h-[80%]  flex justify-center items-center'>
-                        <div className='bg-white h-[70%] w-[70%] rounded-xl shadow-md' data-aos="fade-up">
-
+                        <div className=' h-[70%] w-[70%] rounded-xl' data-aos="fade-up">
+                            <img src={local} className='h-[100%]'/>
                         </div>
                     </div>
                     <div className={`w-[95%] h-100 flex  text-white justify-center items-center flex-col  `}>
@@ -49,19 +52,21 @@ const LandingPage=()=>{
                         </h2>
                     </div>
                     <div className='w-[50vw]   flex justify-center items-center' data-aos="flip-left">
-                        <div className='bg-white h-[50%] w-[50%] rounded-xl shadow-md'>
-
+                        <div className='h-[50%] w-[50%] rounded-xl '>
+                         <img src={local} className='h-[100%]'/>
+                            {/* <Store/> */}
                         </div>
                     </div>
                 </div>
             }
+            <Feature/>
             {/* marketing */}
             {
                 isSmallDevice &&
                 <div className={`w-[100vw] h-[60vh]  flex flex-col p-[5%] py-[10%]  `}  >
-                    <div className='w-[100%]  h-[80%]  flex justify-center items-center'>
-                        <div className='bg-white h-[70%] w-[70%] rounded-xl shadow-md' data-aos="fade-down">
-
+                    <div className='w-[100%]  h-[80%]  flex justify-center items-center' data-aos="flip-right">
+                        <div className=' h-[70%] w-[70%] rounded-xl s' >
+                            <img src={marketing} className='h-[100%] w-[100%]'/>
                         </div>
                     </div>
                     <div className={`w-[95%] h-100 flex  text-white justify-center items-center flex-col  `} data-aos="fade-up">
@@ -95,8 +100,8 @@ const LandingPage=()=>{
                 !isSmallDevice &&
                 <div className={`w-[100vw] h-[100vh]  flex  `}>
                     <div className='w-[50vw]   flex justify-center items-center' data-aos="flip-right">
-                        <div className='bg-white h-[50%] w-[50%] rounded-xl shadow-md'>
-
+                        <div className='h-[50%] w-[50%] rounded-xl '>
+                        <img src={marketing} className='h-[100%]'/>
                         </div>
                     </div>
                     <div className={`w-[50vw] h-100 flex   justify-center items-center flex-col pl-[10%] `} data-aos="fade-left">
@@ -115,7 +120,7 @@ const LandingPage=()=>{
                             <a href='#' className='mt-10 text-[1.3rem] text-blue-40000 no-underline'>
                                 <div className='flex items-center gap-2'>
                                     <p>
-                                    Learn More
+                                        Learn More
                                     </p>
                                     <span className='pi pi-arrow-right'></span>
                                 </div>
@@ -131,9 +136,9 @@ const LandingPage=()=>{
             {
                 isSmallDevice &&
                 <div className={`w-[100vw] h-[60vh]  flex flex-col p-[5%] py-[10%]  `}  >
-                    <div className='w-[100%]  h-[80%]  flex justify-center items-center'>
-                        <div className='bg-white h-[70%] w-[70%] rounded-xl shadow-md' data-aos="fade-down">
-
+                    <div className='w-[100%]  h-[80%]  flex justify-center items-center' data-aos="flip-right" >
+                        <div className='h-[70%] w-[70%] rounded-xl ' >
+                            <img src={tenant} className='h-[100%] w-[100%]'/>
                         </div>
                     </div>
                     <div className={`w-[95%] h-100 flex  text-white justify-center items-center flex-col  `} data-aos="fade-up">
@@ -193,15 +198,15 @@ const LandingPage=()=>{
 
                     </div>
                     <div className='w-[50vw]   flex justify-center items-center' data-aos="flip-right">
-                        <div className='bg-white h-[50%] w-[50%] rounded-xl shadow-md'>
-
+                        <div className=' h-[60%] w-[60%] rounded-xl '>
+                        <img src={tenant} className='h-[100%]'/>
                         </div>
                     </div>
 
                 </div>
             }
             <AboutUs/>
-            <Feature/>
+
             <Footer/>
             <Navbar/>
         </div>
